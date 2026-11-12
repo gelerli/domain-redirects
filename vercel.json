@@ -1,8 +1,48 @@
+
 {
   "redirects": [
     {
       "source": "/(.*)",
-      "destination": "https://www.dirtcakestudio.com/$1",
+      "has": [
+        {
+          "type": "host",
+          "value": "cihangelerli.com"
+        }
+      ],
+      "destination": "https://www.dirtcakestudio.com/cihangelerli",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.cihangelerli.com"
+        }
+      ],
+      "destination": "https://www.dirtcakestudio.com/cihangelerli",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "gelerliworld.com"
+        }
+      ],
+      "destination": "https://www.dirtcakestudio.com",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gelerliworld.com"
+        }
+      ],
+      "destination": "https://www.dirtcakestudio.com",
       "permanent": true
     }
   ]
